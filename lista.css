@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "main empty sidebar"
+    "footer footer footer";
+  gap: 10px;
+  height: 100vh;
+}
+
+/* Ligando cada área */
+.header {
+  grid-area: header;
+  background: orange;
+}
+
+.main {
+  grid-area: main;
+  background: lightblue;
+}
+
+.empty {
+  grid-area: empty;
+  background: #eee;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: lightcoral;
+}
+
+.footer {
+  grid-area: footer;
+  background: lightgreen;
+}
